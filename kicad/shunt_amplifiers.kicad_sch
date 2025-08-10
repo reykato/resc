@@ -766,15 +766,15 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:IRF7748L1"
+		(symbol "Transistor_FET:BSC123N08NS3G"
 			(pin_names
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q2"
-				(at 6.35 1.2701 0)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -782,8 +782,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "IRF7749L1"
-				(at 6.35 -1.2699 0)
+			(property "Value" "BSC123N08NS3G"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -791,7 +791,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DirectFET:DirectFET_L6"
+			(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -802,7 +802,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BSC123N08NS3G-DS-v02_05-en.pdf?fileId=db3a30431add1d95011ae80eb8555625"
 				(at 5.08 -3.81 0)
 				(effects
 					(font
@@ -812,7 +812,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "55A Id, 80V Vds, OptiMOS N-Channel Power MOSFET, 12.3mOhm Ron, Qg (typ) 19.0nC, PG-TDSON-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -821,7 +821,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "N-Channel MOSFET"
+			(property "ki_keywords" "OptiMOS Power MOSFET N-MOS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -830,7 +830,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DirectFET*L6*"
+			(property "ki_fp_filters" "TDSON*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -839,7 +839,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "IRF7748L1_0_1"
+			(symbol "BSC123N08NS3G_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -1006,8 +1006,8 @@
 					)
 				)
 			)
-			(symbol "IRF7748L1_1_1"
-				(pin input line
+			(symbol "BSC123N08NS3G_1_1"
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "G"
@@ -1017,7 +1017,7 @@
 							)
 						)
 					)
-					(number "G"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1035,7 +1035,7 @@
 							)
 						)
 					)
-					(number "D"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1053,7 +1053,45 @@
 							)
 						)
 					)
-					(number "S"
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4039,7 +4077,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRF7748L1")
+		(lib_id "Transistor_FET:BSC123N08NS3G")
 		(at 87.63 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4065,7 +4103,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DirectFET:DirectFET_L6"
+		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1"
 			(at 92.71 48.895 0)
 			(effects
 				(font
@@ -4076,7 +4114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BSC123N08NS3G-DS-v02_05-en.pdf?fileId=db3a30431add1d95011ae80eb8555625"
 			(at 92.71 50.8 0)
 			(effects
 				(font
@@ -4086,7 +4124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "55A Id, 80V Vds, OptiMOS N-Channel Power MOSFET, 12.3mOhm Ron, Qg (typ) 19.0nC, PG-TDSON-8"
 			(at 87.63 46.99 0)
 			(effects
 				(font
@@ -4095,14 +4133,20 @@
 				(hide yes)
 			)
 		)
-		(pin "G"
+		(pin "2"
 			(uuid "74388731-3113-4483-a357-47267a7acf3d")
 		)
-		(pin "S"
+		(pin "5"
 			(uuid "62bfc032-9f5b-4c59-ba10-a2f55dcd996b")
 		)
-		(pin "D"
+		(pin "4"
 			(uuid "b61139ba-c1ef-4870-b62b-2a5bc6703aa2")
+		)
+		(pin "3"
+			(uuid "90188e8a-b5bc-4d75-a784-fbe7551791c4")
+		)
+		(pin "1"
+			(uuid "4d8b382a-8eef-4774-bcf7-2f37c87d3a48")
 		)
 		(instances
 			(project ""
@@ -4114,7 +4158,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRF7748L1")
+		(lib_id "Transistor_FET:BSC123N08NS3G")
 		(at 87.63 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4140,7 +4184,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DirectFET:DirectFET_L6"
+		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1"
 			(at 92.71 76.835 0)
 			(effects
 				(font
@@ -4151,7 +4195,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BSC123N08NS3G-DS-v02_05-en.pdf?fileId=db3a30431add1d95011ae80eb8555625"
 			(at 92.71 78.74 0)
 			(effects
 				(font
@@ -4161,7 +4205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "55A Id, 80V Vds, OptiMOS N-Channel Power MOSFET, 12.3mOhm Ron, Qg (typ) 19.0nC, PG-TDSON-8"
 			(at 87.63 74.93 0)
 			(effects
 				(font
@@ -4170,14 +4214,20 @@
 				(hide yes)
 			)
 		)
-		(pin "G"
+		(pin "4"
 			(uuid "4f4665b5-bd67-4f89-9b34-af5f5b395cb3")
 		)
-		(pin "S"
+		(pin "5"
 			(uuid "2bf64913-b9ae-4bbc-8ff8-d30817a1d6b0")
 		)
-		(pin "D"
+		(pin "2"
 			(uuid "887f0ef8-a8c3-48e9-9417-7ef6a80275a3")
+		)
+		(pin "3"
+			(uuid "6767200c-c041-4415-b7e4-9e6ff1355c91")
+		)
+		(pin "1"
+			(uuid "1a584165-f0da-4afb-bb4a-d24f9c7be723")
 		)
 		(instances
 			(project "resc"
@@ -4677,7 +4727,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRF7748L1")
+		(lib_id "Transistor_FET:BSC123N08NS3G")
 		(at 241.3 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4703,7 +4753,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DirectFET:DirectFET_L6"
+		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1"
 			(at 246.38 76.835 0)
 			(effects
 				(font
@@ -4714,7 +4764,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BSC123N08NS3G-DS-v02_05-en.pdf?fileId=db3a30431add1d95011ae80eb8555625"
 			(at 246.38 78.74 0)
 			(effects
 				(font
@@ -4724,7 +4774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "55A Id, 80V Vds, OptiMOS N-Channel Power MOSFET, 12.3mOhm Ron, Qg (typ) 19.0nC, PG-TDSON-8"
 			(at 241.3 74.93 0)
 			(effects
 				(font
@@ -4733,14 +4783,20 @@
 				(hide yes)
 			)
 		)
-		(pin "G"
+		(pin "2"
 			(uuid "19d61d53-3ec7-41ac-b133-62181dd43b00")
 		)
-		(pin "S"
+		(pin "5"
 			(uuid "7308fd01-cc78-43df-945b-2796722a7a9e")
 		)
-		(pin "D"
+		(pin "4"
 			(uuid "14ae6d1d-14b3-4bfe-9abe-42a60a0116db")
+		)
+		(pin "1"
+			(uuid "80ad7aa7-a04d-4e27-b264-95be3281e771")
+		)
+		(pin "3"
+			(uuid "9741f7dd-dbb7-4c33-9177-253e73bb735f")
 		)
 		(instances
 			(project "resc"
@@ -5348,7 +5404,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_Shunt_Isabellenhuette_BVR4026"
+		(property "Footprint" "footprints:RESC10052X105N"
 			(at 128.27 52.832 90)
 			(effects
 				(font
@@ -5656,7 +5712,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRF7748L1")
+		(lib_id "Transistor_FET:BSC123N08NS3G")
 		(at 165.1 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5682,7 +5738,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DirectFET:DirectFET_L6"
+		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1"
 			(at 170.18 76.835 0)
 			(effects
 				(font
@@ -5693,7 +5749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BSC123N08NS3G-DS-v02_05-en.pdf?fileId=db3a30431add1d95011ae80eb8555625"
 			(at 170.18 78.74 0)
 			(effects
 				(font
@@ -5703,7 +5759,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "55A Id, 80V Vds, OptiMOS N-Channel Power MOSFET, 12.3mOhm Ron, Qg (typ) 19.0nC, PG-TDSON-8"
 			(at 165.1 74.93 0)
 			(effects
 				(font
@@ -5712,14 +5768,20 @@
 				(hide yes)
 			)
 		)
-		(pin "G"
+		(pin "4"
 			(uuid "52dbae31-e611-4314-91dc-389aa6b8d25f")
 		)
-		(pin "S"
+		(pin "5"
 			(uuid "8d58d5b6-d900-4bf5-bc70-2b193910ad20")
 		)
-		(pin "D"
+		(pin "2"
 			(uuid "e041c26c-d817-443d-bd33-21f91f677a27")
+		)
+		(pin "3"
+			(uuid "1c8abdbb-52f0-48c7-a3e6-f049d5ef7299")
+		)
+		(pin "1"
+			(uuid "5d466f17-7712-4d68-8cf3-edd3399c21c7")
 		)
 		(instances
 			(project "resc"
@@ -6018,7 +6080,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRF7748L1")
+		(lib_id "Transistor_FET:BSC123N08NS3G")
 		(at 241.3 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6044,7 +6106,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DirectFET:DirectFET_L6"
+		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1"
 			(at 246.38 48.895 0)
 			(effects
 				(font
@@ -6055,7 +6117,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BSC123N08NS3G-DS-v02_05-en.pdf?fileId=db3a30431add1d95011ae80eb8555625"
 			(at 246.38 50.8 0)
 			(effects
 				(font
@@ -6065,7 +6127,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "55A Id, 80V Vds, OptiMOS N-Channel Power MOSFET, 12.3mOhm Ron, Qg (typ) 19.0nC, PG-TDSON-8"
 			(at 241.3 46.99 0)
 			(effects
 				(font
@@ -6074,14 +6136,20 @@
 				(hide yes)
 			)
 		)
-		(pin "G"
+		(pin "4"
 			(uuid "febe6de1-8f6e-4d2f-96b3-696bf1284acd")
 		)
-		(pin "S"
+		(pin "1"
 			(uuid "388b41ea-7c62-4b6f-afd6-e62f6af96b9e")
 		)
-		(pin "D"
+		(pin "5"
 			(uuid "16a85f13-45b8-49bb-a6b7-0a8337be63fb")
+		)
+		(pin "2"
+			(uuid "2d8c5735-05a5-4620-bd65-068eaf9f6b97")
+		)
+		(pin "3"
+			(uuid "d0ae0181-afb1-4242-bf96-b1d6a05b4595")
 		)
 		(instances
 			(project "resc"
@@ -6556,7 +6624,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_Shunt_Isabellenhuette_BVR4026"
+		(property "Footprint" "footprints:RESC10052X105N"
 			(at 204.47 52.832 90)
 			(effects
 				(font
@@ -7678,7 +7746,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRF7748L1")
+		(lib_id "Transistor_FET:BSC123N08NS3G")
 		(at 165.1 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7704,7 +7772,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DirectFET:DirectFET_L6"
+		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1"
 			(at 170.18 48.895 0)
 			(effects
 				(font
@@ -7715,7 +7783,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BSC123N08NS3G-DS-v02_05-en.pdf?fileId=db3a30431add1d95011ae80eb8555625"
 			(at 170.18 50.8 0)
 			(effects
 				(font
@@ -7725,7 +7793,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "55A Id, 80V Vds, OptiMOS N-Channel Power MOSFET, 12.3mOhm Ron, Qg (typ) 19.0nC, PG-TDSON-8"
 			(at 165.1 46.99 0)
 			(effects
 				(font
@@ -7734,14 +7802,20 @@
 				(hide yes)
 			)
 		)
-		(pin "G"
+		(pin "3"
 			(uuid "105d7cb1-b8c6-4660-920d-c6a7a3fa2095")
 		)
-		(pin "S"
+		(pin "5"
 			(uuid "63bcb6d7-e4bf-406c-b364-e21c964060c6")
 		)
-		(pin "D"
+		(pin "4"
 			(uuid "21a783d7-5fe2-45e6-912b-517976227482")
+		)
+		(pin "1"
+			(uuid "a6ad1e35-dcea-4a12-a160-266277415691")
+		)
+		(pin "2"
+			(uuid "c5f41e38-8023-497f-9412-3b640b405afc")
 		)
 		(instances
 			(project "resc"
@@ -7778,7 +7852,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_Shunt_Vishay_WSR2_WSR3"
+		(property "Footprint" "footprints:RESC10052X105N"
 			(at 50.8 52.832 90)
 			(effects
 				(font
