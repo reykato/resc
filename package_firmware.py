@@ -20,6 +20,7 @@ default_name = "VESC_default.bin"
 # Add directories and targets to the dictionary
 # package_dict["group name diplayed in firmware tab of the vesc tool"] = [['.c filename minus the hw_', 'compiled .bin filename']]
 package_dict = {}
+package_dict["resc_rev0"] = [['resc_rev0', default_name]]
 package_dict["46_o_47"] = [['46', default_name],
                     ['46_33k', 'VESC_33k.bin'],
                     ['46_0005ohm', 'VESC_0005ohm.bin']]
