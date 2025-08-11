@@ -7,7 +7,7 @@
 	(title_block
 		(title "rESC")
 		(date "2025-05-24")
-		(rev "a")
+		(rev "1")
 		(company "Tyler Lindsay")
 	)
 	(lib_symbols
@@ -2894,7 +2894,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "10a8d3b3-a67b-4aeb-a24a-f1be0566338b")
-		(property "Reference" "C64"
+		(property "Reference" "C61"
 			(at 182.626 54.356 90)
 			(effects
 				(font
@@ -2946,7 +2946,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/7fcb459e-6347-48a4-bd99-c80bd89cbe59"
-					(reference "C64")
+					(reference "C61")
 					(unit 1)
 				)
 			)
@@ -3027,7 +3027,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ccbac82-882d-41c3-9498-5a6fe033f4a6")
-		(property "Reference" "C67"
+		(property "Reference" "C64"
 			(at 182.626 69.596 90)
 			(effects
 				(font
@@ -3079,7 +3079,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/7fcb459e-6347-48a4-bd99-c80bd89cbe59"
-					(reference "C67")
+					(reference "C64")
 					(unit 1)
 				)
 			)
@@ -3094,7 +3094,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "36397a25-c582-4e93-9f5a-53e9181c2cd3")
-		(property "Reference" "C66"
+		(property "Reference" "C63"
 			(at 182.626 61.976 90)
 			(effects
 				(font
@@ -3146,7 +3146,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/7fcb459e-6347-48a4-bd99-c80bd89cbe59"
-					(reference "C66")
+					(reference "C63")
 					(unit 1)
 				)
 			)
@@ -3678,7 +3678,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ee0ce61-f4e3-4396-a348-ffadf7be303b")
-		(property "Reference" "C61"
+		(property "Reference" "C58"
 			(at 194.31 29.21 90)
 			(effects
 				(font
@@ -3730,7 +3730,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/7fcb459e-6347-48a4-bd99-c80bd89cbe59"
-					(reference "C61")
+					(reference "C58")
 					(unit 1)
 				)
 			)
@@ -3812,7 +3812,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89b09cd6-b955-4e1a-8b78-f81cc60d4dfb")
-		(property "Reference" "C63"
+		(property "Reference" "C60"
 			(at 194.31 41.91 90)
 			(effects
 				(font
@@ -3864,7 +3864,7 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/7fcb459e-6347-48a4-bd99-c80bd89cbe59"
-					(reference "C63")
+					(reference "C60")
 					(unit 1)
 				)
 			)
@@ -3880,7 +3880,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a23cb4c-58e5-4374-a468-1fa3717423d6")
-		(property "Reference" "C68"
+		(property "Reference" "C65"
 			(at 187.96 85.0899 0)
 			(effects
 				(font
@@ -3934,7 +3934,7 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/7fcb459e-6347-48a4-bd99-c80bd89cbe59"
-					(reference "C68")
+					(reference "C65")
 					(unit 1)
 				)
 			)
@@ -4090,7 +4090,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae1f68fe-3f20-4e1c-ac9b-a4507745417f")
-		(property "Reference" "C62"
+		(property "Reference" "C59"
 			(at 60.96 38.1 90)
 			(effects
 				(font
@@ -4142,7 +4142,7 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/7fcb459e-6347-48a4-bd99-c80bd89cbe59"
-					(reference "C62")
+					(reference "C59")
 					(unit 1)
 				)
 			)
@@ -4291,7 +4291,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6a4594d-5eb3-4542-ab84-247a208b5ec4")
-		(property "Reference" "C65"
+		(property "Reference" "C62"
 			(at 60.96 53.34 90)
 			(effects
 				(font
@@ -4343,7 +4343,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/7fcb459e-6347-48a4-bd99-c80bd89cbe59"
-					(reference "C65")
+					(reference "C62")
 					(unit 1)
 				)
 			)

@@ -7,7 +7,7 @@
 	(title_block
 		(title "rESC")
 		(date "2025-05-24")
-		(rev "a")
+		(rev "1")
 		(company "Tyler Lindsay")
 	)
 	(lib_symbols
