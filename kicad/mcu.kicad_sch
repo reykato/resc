@@ -150,7 +150,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Crystal_GND3"
+		(symbol "Device:Crystal_GND24"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -159,19 +159,21 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Y"
-				(at 0 5.715 0)
+				(at 3.175 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Crystal_GND3"
-				(at 0 3.81 0)
+			(property "Value" "Crystal_GND24"
+				(at 3.175 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -192,7 +194,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Three pin crystal, GND on pin 3"
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -219,10 +221,22 @@
 					(hide yes)
 				)
 			)
-			(symbol "Crystal_GND3_0_1"
+			(symbol "Crystal_GND24_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy -1.905 0)
+						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.032 0)
 					)
 					(stroke
 						(width 0)
@@ -246,7 +260,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 -1.27) (xy -1.905 1.27)
+						(xy -2.032 -1.27) (xy -2.032 1.27)
 					)
 					(stroke
 						(width 0.508)
@@ -269,6 +283,18 @@
 				)
 				(polyline
 					(pts
+						(xy 0 3.556) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 0 -3.81) (xy 0 -3.556)
 					)
 					(stroke
@@ -281,19 +307,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.905 1.27) (xy 1.905 -1.27)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0) (xy 2.54 0)
+						(xy 2.032 0) (xy 2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -303,8 +317,20 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27) (xy 2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "Crystal_GND3_1_1"
+			(symbol "Crystal_GND24_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 1.27)
@@ -324,16 +350,34 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 90)
+					(at 0 5.08 270)
 					(length 1.27)
-					(name "3"
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -344,14 +388,14 @@
 				(pin passive line
 					(at 3.81 0 180)
 					(length 1.27)
-					(name "2"
+					(name "3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2198,6 +2242,12 @@
 		(uuid "c083b320-fdcb-4dac-99c9-fa49d733f7be")
 	)
 	(junction
+		(at 91.44 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf6b7f9d-b24e-4471-9fe4-706313b0b849")
+	)
+	(junction
 		(at 219.71 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2220,6 +2270,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f5408cf8-9072-48be-9adc-e7845ad88ddc")
+	)
+	(wire
+		(pts
+			(xy 86.36 67.31) (xy 86.36 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02e7ef19-320c-45d1-bbc7-575e4fa27a87")
 	)
 	(wire
 		(pts
@@ -2353,6 +2413,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 81.28) (xy 86.36 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "449690ac-d8c6-40c0-9bde-fee0c6263341")
+	)
+	(wire
+		(pts
 			(xy 128.27 62.23) (xy 125.73 62.23)
 		)
 		(stroke
@@ -2483,7 +2553,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 81.28) (xy 86.36 81.28)
+			(xy 95.25 81.28) (xy 91.44 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2510,6 +2580,16 @@
 			(type default)
 		)
 		(uuid "98061eb5-7c1f-4d78-b95c-84f8a95715e9")
+	)
+	(wire
+		(pts
+			(xy 86.36 66.04) (xy 91.44 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99eaf254-4b63-4008-b47a-d7befe23d00e")
 	)
 	(wire
 		(pts
@@ -2640,6 +2720,16 @@
 			(type default)
 		)
 		(uuid "dc9344cf-ab8c-4ec4-8aeb-e590f7bec36a")
+	)
+	(wire
+		(pts
+			(xy 91.44 66.04) (xy 91.44 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd6790a5-c4a1-463a-9b35-6cd848b83cbd")
 	)
 	(wire
 		(pts
@@ -3746,17 +3836,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Crystal_GND3")
+		(lib_id "Device:Crystal_GND24")
 		(at 86.36 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6d99a3e5-8d12-449e-a87b-7c1f1a0be721")
 		(property "Reference" "Y1"
-			(at 86.36 64.77 0)
+			(at 81.788 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3764,7 +3853,7 @@
 			)
 		)
 		(property "Value" "8MHz"
-			(at 86.36 67.31 0)
+			(at 81.788 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3789,7 +3878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Three pin crystal, GND on pin 3"
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
 			(at 86.36 72.39 0)
 			(effects
 				(font
@@ -3806,6 +3895,9 @@
 		)
 		(pin "2"
 			(uuid "16127802-ca11-467c-b5ce-9d0aefaa062e")
+		)
+		(pin "4"
+			(uuid "3fd888a7-bc46-46df-9a82-7dd7f2c8b87e")
 		)
 		(instances
 			(project "resc"

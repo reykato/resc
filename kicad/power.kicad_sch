@@ -2218,7 +2218,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT-223_3MC_MCH"
+		(property "Footprint" "footprints:SOT-223_3MC_MCH_Custom"
 			(at 167.64 110.49 0)
 			(effects
 				(font
@@ -2293,7 +2293,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_16x17.5"
+		(property "Footprint" "footprints:CP_Elec_16x17.5_Panasonic"
 			(at 244.8052 54.61 0)
 			(show_name yes)
 			(effects
@@ -2434,7 +2434,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_16x17.5"
+		(property "Footprint" "footprints:CP_Elec_16x17.5_Panasonic"
 			(at 265.1252 54.61 0)
 			(show_name yes)
 			(effects

@@ -1496,131 +1496,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VBUS"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VBUS"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VBUS\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VBUS_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VBUS_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(junction
 		(at 130.81 78.74)
@@ -2203,15 +2078,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
+		(lib_id "power:+5V")
 		(at 129.54 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "88c35639-f843-4881-b2b7-1a79c8e9ade5")
-		(property "Reference" "#PWR088"
+		(fields_autoplaced yes)
+		(uuid "90632036-6b47-4f89-9142-962849a7a3ad")
+		(property "Reference" "#PWR026"
 			(at 129.54 101.6 0)
 			(effects
 				(font
@@ -2220,8 +2096,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VBUS"
-			(at 129.54 93.98 0)
+		(property "Value" "+5V"
+			(at 129.54 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2246,7 +2122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 129.54 97.79 0)
 			(effects
 				(font
@@ -2256,12 +2132,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d0d2ce8c-1a80-4a99-8521-70a48f674a05")
+			(uuid "967b8c39-7466-47e2-ad97-ff26861bc192")
 		)
 		(instances
-			(project "resc"
+			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/5f81bd15-f3fb-48c3-8997-18d2496b9ffc"
-					(reference "#PWR088")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)

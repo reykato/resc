@@ -6435,7 +6435,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+		(property "Footprint" "footprints:IND_VLS3010CX-220M-1"
 			(at 95.25 44.45 0)
 			(effects
 				(font

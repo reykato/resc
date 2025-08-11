@@ -1,4 +1,4 @@
-25245731648395883
+25250996323860653
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -101297,6 +101297,13 @@ EMVH630ARA221MKG5S
 2
 2
 footprints
+CP_Elec_16x17.5_Panasonic
+SMD capacitor, aluminum electrolytic, Vishay 1616, 16.0x17.5mm, http://www.vishay.com/docs/28395/150crz.pdf
+capacitor electrolytic
+0
+2
+2
+footprints
 HIROSE_U.FL-R-SMT-1_80_
 
 
@@ -101324,6 +101331,13 @@ TJA1051TK/3_118
 0
 9
 9
+footprints
+IND_VLS3010CX-220M-1
+
+
+0
+2
+2
 footprints
 QFN40P600X600X90-49N
 
@@ -101372,6 +101386,13 @@ SOT-223_3MC_MCH-M
 TC2117-3.3VDBTR 
 0
 3
+3
+footprints
+SOT-223_3MC_MCH_Custom
+
+TC2117-3.3VDBTR 
+0
+4
 3
 footprints
 SOT65P210X110-5N
