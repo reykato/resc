@@ -1,4 +1,4 @@
-25250996323860653
+25256261160348004
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -101402,6 +101402,13 @@ SOT65P210X110-5N
 5
 5
 footprints
+SOT65P210X110-5N_Custom
+
+
+0
+5
+5
+footprints
 TRANS_BSC014N04LSIATMA1
 
 
@@ -101410,6 +101417,20 @@ TRANS_BSC014N04LSIATMA1
 3
 footprints
 TRANS_BSC014N04LSIATMA1_Custom
+
+
+0
+3
+3
+footprints
+TRANS_BSC014N04LSIATMA1_Custom_NoFootprint
+
+
+0
+3
+3
+footprints
+TRANS_BSC014N04LSIATMA1_Custom_NoSilkscreen
 
 
 0

@@ -4104,7 +4104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1_Custom"
+		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1_Custom_NoSilkscreen"
 			(at 92.71 48.895 0)
 			(effects
 				(font
@@ -4186,7 +4186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1_Custom"
+		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1_Custom_NoSilkscreen"
 			(at 92.71 76.835 0)
 			(effects
 				(font
@@ -4676,7 +4676,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:SOT65P210X110-5N"
+		(property "Footprint" "footprints:SOT65P210X110-5N_Custom"
 			(at 209.804 137.922 0)
 			(effects
 				(font
@@ -4756,7 +4756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1_Custom"
+		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1_Custom_NoSilkscreen"
 			(at 246.38 76.835 0)
 			(effects
 				(font
@@ -5263,7 +5263,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:SOT65P210X110-5N"
+		(property "Footprint" "footprints:SOT65P210X110-5N_Custom"
 			(at 56.134 137.922 0)
 			(effects
 				(font
@@ -5742,7 +5742,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1_Custom"
+		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1_Custom_NoSilkscreen"
 			(at 170.18 76.835 0)
 			(effects
 				(font
@@ -6111,7 +6111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1_Custom"
+		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1_Custom_NoSilkscreen"
 			(at 246.38 48.895 0)
 			(effects
 				(font
@@ -6329,7 +6329,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:SOT65P210X110-5N"
+		(property "Footprint" "footprints:SOT65P210X110-5N_Custom"
 			(at 133.604 137.922 0)
 			(effects
 				(font
@@ -7778,7 +7778,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1_Custom"
+		(property "Footprint" "footprints:TRANS_BSC014N04LSIATMA1_Custom_NoSilkscreen"
 			(at 170.18 48.895 0)
 			(effects
 				(font
