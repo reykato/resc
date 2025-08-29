@@ -20,7 +20,7 @@
 #ifndef HW_60_CORE_H_
 #define HW_60_CORE_H_
 
-#define HW_NAME					"resc_rev0"
+#define HW_NAME					"resc_rev1"
 
 #define HW_MAJOR				6
 #define HW_MINOR				0
