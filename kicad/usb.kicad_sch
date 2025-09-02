@@ -650,6 +650,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -1561,6 +1711,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 72.39) (xy 121.92 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ea1a7ed-465e-4fd7-be77-2b1dcfb52b39")
+	)
+	(wire
+		(pts
 			(xy 107.95 91.44) (xy 113.03 91.44)
 		)
 		(stroke
@@ -1601,7 +1761,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 72.39) (xy 114.3 69.85)
+			(xy 133.35 72.39) (xy 133.35 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1648,6 +1808,16 @@
 			(type default)
 		)
 		(uuid "6aac974e-f281-4d12-bca5-5ab358fbf362")
+	)
+	(wire
+		(pts
+			(xy 129.54 72.39) (xy 133.35 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72745c56-7f09-4c83-9a51-cfca908eb167")
 	)
 	(wire
 		(pts
@@ -1751,6 +1921,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 72.39) (xy 111.76 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4908ae0-9b50-4c07-a52d-645e5337492c")
+	)
+	(wire
+		(pts
 			(xy 107.95 77.47) (xy 118.11 77.47)
 		)
 		(stroke
@@ -1758,16 +1938,6 @@
 			(type default)
 		)
 		(uuid "f8cfe576-2702-4d81-ac83-aa2d358f3e7d")
-	)
-	(wire
-		(pts
-			(xy 107.95 72.39) (xy 114.3 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcca3a73-2b1f-440b-8ff4-84324384bfd6")
 	)
 	(hierarchical_label "USB_D+"
 		(shape bidirectional)
@@ -2145,7 +2315,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 114.3 69.85 0)
+		(at 133.35 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2154,7 +2324,7 @@
 		(fields_autoplaced yes)
 		(uuid "9d8ccd59-9224-4976-aba0-4961244c1a15")
 		(property "Reference" "#PWR086"
-			(at 114.3 73.66 0)
+			(at 133.35 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2163,7 +2333,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 114.3 64.77 0)
+			(at 133.35 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2171,7 +2341,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 69.85 0)
+			(at 133.35 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2180,7 +2350,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 69.85 0)
+			(at 133.35 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2189,7 +2359,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 114.3 69.85 0)
+			(at 133.35 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2204,6 +2374,74 @@
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/5f81bd15-f3fb-48c3-8997-18d2496b9ffc"
 					(reference "#PWR086")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 125.73 72.39 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a099834a-d134-4cc8-8a11-b222734e064a")
+		(property "Reference" "D10"
+			(at 126.0475 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Schottky"
+			(at 126.0475 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
+			(at 125.73 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 125.73 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28e6f5dc-a9f3-4d86-92f3-c2a8291a62e1")
+		)
+		(pin "2"
+			(uuid "23efa648-590a-4115-9d9a-bf49820d0c06")
+		)
+		(instances
+			(project ""
+				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/5f81bd15-f3fb-48c3-8997-18d2496b9ffc"
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -2445,6 +2683,74 @@
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/5f81bd15-f3fb-48c3-8997-18d2496b9ffc"
 					(reference "#PWR087")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 115.57 72.39 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f20968c9-b97a-4a26-9464-db87ce687ba9")
+		(property "Reference" "R24"
+			(at 115.57 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 115.57 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 115.824 71.374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 115.57 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "81e8c02c-17d2-456a-a07d-176c2ed1f0da")
+		)
+		(pin "1"
+			(uuid "cd78a7f0-9144-4841-8134-d17ba16dbe00")
+		)
+		(instances
+			(project ""
+				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/5f81bd15-f3fb-48c3-8997-18d2496b9ffc"
+					(reference "R24")
 					(unit 1)
 				)
 			)
