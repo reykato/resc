@@ -2374,7 +2374,7 @@
 		(uuid "16f5070b-563d-4b00-925d-23ae4f804b8f")
 	)
 	(hierarchical_label "SUPPLY"
-		(shape input)
+		(shape bidirectional)
 		(at 191.77 34.29 90)
 		(effects
 			(font
@@ -2501,7 +2501,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 81.534 110.744 90)
 			(effects
 				(font
@@ -2800,7 +2800,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "footprints:SOT-23-5-DBV_TEX"
 			(at 95.25 115.57 0)
 			(effects
 				(font

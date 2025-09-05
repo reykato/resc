@@ -1711,16 +1711,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 72.39) (xy 121.92 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ea1a7ed-465e-4fd7-be77-2b1dcfb52b39")
-	)
-	(wire
-		(pts
 			(xy 107.95 91.44) (xy 113.03 91.44)
 		)
 		(stroke
@@ -1758,6 +1748,16 @@
 			(type default)
 		)
 		(uuid "325d52fa-ac03-4850-bfe0-4d97ef16b583")
+	)
+	(wire
+		(pts
+			(xy 123.19 72.39) (xy 133.35 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f28715e-32fb-435f-a0e2-61bbf0e027e4")
 	)
 	(wire
 		(pts
@@ -1811,16 +1811,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 72.39) (xy 133.35 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72745c56-7f09-4c83-9a51-cfca908eb167")
-	)
-	(wire
-		(pts
 			(xy 129.54 114.3) (xy 129.54 116.84)
 		)
 		(stroke
@@ -1871,6 +1861,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 72.39) (xy 115.57 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c016cd00-70cf-44d5-8827-2ffd41ac3b02")
+	)
+	(wire
+		(pts
 			(xy 92.71 110.49) (xy 92.71 114.3)
 		)
 		(stroke
@@ -1918,16 +1918,6 @@
 			(type default)
 		)
 		(uuid "e1176751-529f-485a-91d7-5dce4e7d2467")
-	)
-	(wire
-		(pts
-			(xy 107.95 72.39) (xy 111.76 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4908ae0-9b50-4c07-a52d-645e5337492c")
 	)
 	(wire
 		(pts
@@ -2381,7 +2371,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 125.73 72.39 180)
+		(at 119.38 72.39 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2390,7 +2380,7 @@
 		(fields_autoplaced yes)
 		(uuid "a099834a-d134-4cc8-8a11-b222734e064a")
 		(property "Reference" "D10"
-			(at 126.0475 66.04 0)
+			(at 119.6975 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2398,7 +2388,7 @@
 			)
 		)
 		(property "Value" "D_Schottky"
-			(at 126.0475 68.58 0)
+			(at 119.6975 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2406,7 +2396,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 125.73 72.39 0)
+			(at 119.38 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2415,7 +2405,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 125.73 72.39 0)
+			(at 119.38 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2424,7 +2414,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 125.73 72.39 0)
+			(at 119.38 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2683,74 +2673,6 @@
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/5f81bd15-f3fb-48c3-8997-18d2496b9ffc"
 					(reference "#PWR087")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 115.57 72.39 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f20968c9-b97a-4a26-9464-db87ce687ba9")
-		(property "Reference" "R24"
-			(at 115.57 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 115.57 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 115.824 71.374 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 115.57 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 115.57 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "81e8c02c-17d2-456a-a07d-176c2ed1f0da")
-		)
-		(pin "1"
-			(uuid "cd78a7f0-9144-4841-8134-d17ba16dbe00")
-		)
-		(instances
-			(project ""
-				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/5f81bd15-f3fb-48c3-8997-18d2496b9ffc"
-					(reference "R24")
 					(unit 1)
 				)
 			)
