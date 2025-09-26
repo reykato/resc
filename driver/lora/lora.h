@@ -12,4 +12,4 @@
 void lora_init(void);
 void lora_stop(void);
 
-#endif /* HWCONF_DRV8301_H_ */
+#endif /* HWCONF_RFM95W_H_ */

@@ -20,13 +20,13 @@
 #ifndef HW_60_CORE_H_
 #define HW_60_CORE_H_
 
-#define HW_NAME					"resc_rev1"
+#define HW_NAME					"resc_rev2"
 
 #define HW_MAJOR				6
 #define HW_MINOR				0
 
 // HW properties
-#define HW_HAS_DRV8301
+#define HW_HAS_6EDL7141
 #define HW_HAS_3_SHUNTS
 #define HW_HAS_PHASE_SHUNTS
 
@@ -255,14 +255,14 @@
 #define HW_SPI_PIN_MISO			6
 
 // SPI for DRV8301
-#define DRV8301_MOSI_GPIO		GPIOB
-#define DRV8301_MOSI_PIN		4
-#define DRV8301_MISO_GPIO		GPIOB
-#define DRV8301_MISO_PIN		3
-#define DRV8301_SCK_GPIO		GPIOC
-#define DRV8301_SCK_PIN			12
-#define DRV8301_CS_GPIO			GPIOC
-#define DRV8301_CS_PIN			9
+#define EDL7141_MOSI_GPIO		GPIOB
+#define EDL7141_MOSI_PIN		4
+#define EDL7141_MISO_GPIO		GPIOB
+#define EDL7141_MISO_PIN		3
+#define EDL7141_SCK_GPIO		GPIOC
+#define EDL7141_SCK_PIN			12
+#define EDL7141_CS_GPIO			GPIOC
+#define EDL7141_CS_PIN			9
 
 // I2C for BMI160
 #define BMI160_SDA_GPIO			GPIOB

@@ -21,7 +21,7 @@
 #include "hal.h"
 #include "stm32f4xx_conf.h"
 #include "utils_math.h"
-#include "drv8301.h"
+#include "edl7141.h"
 #include "terminal.h"
 #include "commands.h"
 #include "mc_interface.h"
@@ -125,7 +125,7 @@ void hw_init_gpio(void) {
 
 
 
-	drv8301_init();
+	edl7141_init();
 
 	terminal_register_command_callback(
 		"shutdown",
