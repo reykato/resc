@@ -40,6 +40,7 @@ static const I2CConfig i2cfg = {
 
 static void terminal_shutdown_now(int argc, const char **argv);
 static void terminal_button_test(int argc, const char **argv);
+static void terminal_print_curr(int argc, const char **argv);
 
 void hw_init_gpio(void) {
 	chMtxObjectInit(&shutdown_mutex);
@@ -123,8 +124,6 @@ void hw_init_gpio(void) {
 	palSetPadMode(GPIOC, 3, PAL_MODE_INPUT_ANALOG);
 	palSetPadMode(GPIOC, 4, PAL_MODE_INPUT_ANALOG);
 
-
-
 	edl7141_init();
 
 	terminal_register_command_callback(
@@ -138,6 +137,12 @@ void hw_init_gpio(void) {
 		"Try sampling the shutdown button",
 		0,
 		terminal_button_test);
+
+	terminal_register_command_callback(
+		"curr",
+		"Takes 3 raw current input measurements",
+		0,
+		terminal_print_curr);
 }
 
 void hw_setup_adc_channels(void) {
@@ -314,4 +319,17 @@ static void terminal_button_test(int argc, const char **argv) {
 		commands_printf("BT: %d %.2f", HW_SAMPLE_SHUTDOWN(), (double)bt_diff);
 		chThdSleepMilliseconds(100);
 	}
+}
+
+static void terminal_print_curr(int argc, const char **argv) {
+	(void)argc;
+	(void)argv;
+
+	commands_printf("---- Current ADC Measurements (sample 1) ----\nCurr 1: %.2fv\nCurr 2: %.2fv\nCurr 3: %.2fv",
+			GET_CURRENT1(), GET_CURRENT2(), GET_CURRENT3());
+	commands_printf("---- Current ADC Measurements (sample 2) ----\nCurr 1: %.2fv\nCurr 2: %.2fv\nCurr 3: %.2fv",
+			GET_CURRENT1(), GET_CURRENT2(), GET_CURRENT3());
+	commands_printf("---- Current ADC Measurements (sample 3) ----\nCurr 1: %.2fv\nCurr 2: %.2fv\nCurr 3: %.2fv",
+			GET_CURRENT1(), GET_CURRENT2(), GET_CURRENT3());
+
 }

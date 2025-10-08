@@ -28,6 +28,7 @@ void edl7141_reset_faults(void);
 char* edl7141_faults_to_string(int faults);
 unsigned int edl7141_read_reg(int reg);
 void edl7141_write_reg(int reg, int contents);
+void edl7141_disable_cs(void);
 
 #define HW_RESET_DRV_FAULTS()		edl7141_reset_faults()
 

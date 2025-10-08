@@ -39,6 +39,7 @@ static void spi_delay(void);
 static void terminal_read_reg(int argc, const char **argv);
 static void terminal_write_reg(int argc, const char **argv);
 static void terminal_print_faults(int argc, const char **argv);
+static void terminal_disable_cs(int argc, const char **argv);
 
 // Private variables
 static char m_fault_print_buffer[120];
@@ -55,8 +56,11 @@ void edl7141_init(void) {
 #ifdef EDL7141_CS_GPIO2
 	palSetPadMode(EDL7141_CS_GPIO2, EDL7141_CS_PIN2, PAL_MODE_OUTPUT_PUSHPULL | PAL_STM32_OSPEED_HIGHEST);
 #endif
+	edl7141_disable_cs();
 
 	chThdSleepMilliseconds(100);
+
+	edl7141_disable_cs();
 
 	terminal_register_command_callback(
 			"6edl7141_read_reg",
@@ -75,6 +79,12 @@ void edl7141_init(void) {
 			"Print all current 6EDL7141 faults.",
 			0,
 			terminal_print_faults);
+
+	terminal_register_command_callback(
+			"6edl7141_disable_cs",
+			"Disables 6EDL7141 current sense amplifiers.",
+			0,
+			terminal_disable_cs);
 }
 
 /**
@@ -131,6 +141,12 @@ void edl7141_init(void) {
  *
  * 15:13: Reserved (always reads 0)
  */
+
+void edl7141_disable_cs(void) {
+	int data = 0;
+	edl7141_write_reg(29, data);
+}
+
 int edl7141_read_faults(void) {
 	return edl7141_read_reg(0);
 }
@@ -358,6 +374,13 @@ static void terminal_print_faults(int argc, const char **argv) {
 	(void)argc;
 	(void)argv;
 	commands_printf(edl7141_faults_to_string(edl7141_read_faults()));
+}
+
+static void terminal_disable_cs(int argc, const char **argv) {
+	(void)argc;
+	(void)argv;
+	edl7141_disable_cs();
+	commands_printf("Disabled current sense amplifiers!");
 }
 
 #endif
