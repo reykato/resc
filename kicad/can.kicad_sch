@@ -1039,7 +1039,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b7c601e-c779-452e-9749-7902cd361b9b")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR033"
 			(at 139.7 125.73 0)
 			(effects
 				(font
@@ -1089,7 +1089,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/1a126724-f6f9-4d54-8180-2481aea43f13"
-					(reference "#PWR038")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -1105,7 +1105,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38a7d0b0-a77b-44c6-b53a-fa32c079f507")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR031"
 			(at 139.7 81.28 0)
 			(effects
 				(font
@@ -1155,7 +1155,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/1a126724-f6f9-4d54-8180-2481aea43f13"
-					(reference "#PWR036")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -1171,7 +1171,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ac960be-eee3-4073-82ea-f09179bf70f9")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR032"
 			(at 116.84 106.68 0)
 			(effects
 				(font
@@ -1221,7 +1221,7 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/1a126724-f6f9-4d54-8180-2481aea43f13"
-					(reference "#PWR037")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -1326,7 +1326,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c352570-7a11-45c2-841f-5b5fe2be3a5c")
-		(property "Reference" "C17"
+		(property "Reference" "C15"
 			(at 120.65 109.2199 0)
 			(effects
 				(font
@@ -1380,7 +1380,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/1a126724-f6f9-4d54-8180-2481aea43f13"
-					(reference "C17")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -1396,7 +1396,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85ab0001-53e3-4166-b967-8859e705823f")
-		(property "Reference" "R18"
+		(property "Reference" "R13"
 			(at 171.45 100.3299 0)
 			(effects
 				(font
@@ -1450,7 +1450,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/1a126724-f6f9-4d54-8180-2481aea43f13"
-					(reference "R18")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -1466,7 +1466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88ec72dd-a972-429c-abc5-e2b169360723")
-		(property "Reference" "C16"
+		(property "Reference" "C14"
 			(at 166.37 83.8199 0)
 			(effects
 				(font
@@ -1520,7 +1520,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/1a126724-f6f9-4d54-8180-2481aea43f13"
-					(reference "C16")
+					(reference "C14")
 					(unit 1)
 				)
 			)
