@@ -612,7 +612,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
+		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
 			)
@@ -623,15 +623,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 2.032 0 90)
+				(at 2.54 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "R"
-				(at 0 0 90)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -639,7 +639,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at -1.778 0 90)
+				(at 1.016 -0.254 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -656,7 +656,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "Resistor, US symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -683,12 +683,61 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -696,7 +745,7 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "R_US_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -4056,7 +4105,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "073a8373-df51-4975-9db1-4c77f8201de2")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR071"
 			(at 35.56 139.7 0)
 			(effects
 				(font
@@ -4106,7 +4155,7 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR058")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -4285,7 +4334,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "16a272fa-04b9-4a29-bcc1-a87f6013e192")
-		(property "Reference" "C41"
+		(property "Reference" "C52"
 			(at 218.44 145.034 0)
 			(effects
 				(font
@@ -4339,7 +4388,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C41")
+					(reference "C52")
 					(unit 1)
 				)
 			)
@@ -4355,7 +4404,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "176b0d3b-984b-4be9-9369-fa897ec84d56")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR072"
 			(at 113.03 139.7 0)
 			(effects
 				(font
@@ -4405,14 +4454,14 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR059")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 87.63 124.46 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4421,7 +4470,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f758357-2382-4966-ad45-c9b0e90dddb5")
-		(property "Reference" "R25"
+		(property "Reference" "R40"
 			(at 87.63 118.11 90)
 			(effects
 				(font
@@ -4438,7 +4487,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 87.63 126.238 90)
+			(at 87.884 123.444 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4455,7 +4504,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Resistor, US symbol"
 			(at 87.63 124.46 0)
 			(effects
 				(font
@@ -4473,7 +4522,7 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "R25")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -4488,7 +4537,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2097cbf7-e168-4112-b475-9f98fd5ac1e6")
-		(property "Reference" "C35"
+		(property "Reference" "C46"
 			(at 210.82 91.186 90)
 			(effects
 				(font
@@ -4540,7 +4589,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C35")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -4556,7 +4605,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21176755-622e-4581-aa01-21185669d26c")
-		(property "Reference" "C36"
+		(property "Reference" "C47"
 			(at 83.82 133.3499 0)
 			(effects
 				(font
@@ -4610,7 +4659,7 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C36")
+					(reference "C47")
 					(unit 1)
 				)
 			)
@@ -4625,7 +4674,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2369824f-ebed-4e4d-a591-8c4bcc46d51f")
-		(property "Reference" "C28"
+		(property "Reference" "C39"
 			(at 98.552 61.214 90)
 			(effects
 				(font
@@ -4679,7 +4728,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C28")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -4856,7 +4905,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29f7f939-c558-4deb-904a-73127fdc6eb9")
-		(property "Reference" "TP10"
+		(property "Reference" "TP7"
 			(at 72.39 99.8219 0)
 			(effects
 				(font
@@ -4907,7 +4956,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "TP10")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -5010,7 +5059,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "40417dd8-2193-4f99-b468-05a9b1b5a2cb")
-		(property "Reference" "C32"
+		(property "Reference" "C43"
 			(at 252.222 61.214 90)
 			(effects
 				(font
@@ -5064,7 +5113,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C32")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -5080,7 +5129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43329c60-bcc0-45ed-b9ac-24605e4bbc75")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR075"
 			(at 113.03 149.86 0)
 			(effects
 				(font
@@ -5130,14 +5179,14 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR062")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 241.3 124.46 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5146,7 +5195,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45dc7ae3-8255-4db3-9bb2-eb105ff68cd5")
-		(property "Reference" "R27"
+		(property "Reference" "R42"
 			(at 241.3 118.11 90)
 			(effects
 				(font
@@ -5163,7 +5212,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 241.3 126.238 90)
+			(at 241.554 123.444 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5180,7 +5229,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Resistor, US symbol"
 			(at 241.3 124.46 0)
 			(effects
 				(font
@@ -5198,7 +5247,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "R27")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -5293,7 +5342,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "563e9d8e-01b4-45e9-aa63-5c7098ca175b")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR070"
 			(at 63.5 104.14 0)
 			(effects
 				(font
@@ -5343,14 +5392,14 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR057")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 128.27 54.61 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5359,7 +5408,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ce8ca70-e630-44b7-8695-561301cac5d5")
-		(property "Reference" "R23"
+		(property "Reference" "R35"
 			(at 128.27 48.26 90)
 			(effects
 				(font
@@ -5376,7 +5425,7 @@
 			)
 		)
 		(property "Footprint" "footprints:RESC10052X105N"
-			(at 128.27 52.832 90)
+			(at 128.016 55.626 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5393,7 +5442,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Resistor, US symbol"
 			(at 128.27 54.61 0)
 			(effects
 				(font
@@ -5411,7 +5460,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "R23")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -5426,7 +5475,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "698ab423-46b2-49c4-ad62-d73c73f2319c")
-		(property "Reference" "C29"
+		(property "Reference" "C40"
 			(at 170.942 61.214 90)
 			(effects
 				(font
@@ -5480,7 +5529,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C29")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -5512,7 +5561,7 @@
 				)
 			)
 		)
-		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+		(property "Footprint" "footprints:NetTie-2_SMD_Pad0.2mm"
 			(at 240.03 86.36 0)
 			(effects
 				(font
@@ -5564,7 +5613,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6dd9f29e-0c28-42db-9201-8aa6b437d514")
-		(property "Reference" "TP7"
+		(property "Reference" "TP4"
 			(at 33.528 49.53 90)
 			(effects
 				(font
@@ -5613,7 +5662,7 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "TP7")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -5629,7 +5678,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7818919a-1bdb-4ff6-8891-0dd7c451fc78")
-		(property "Reference" "TP6"
+		(property "Reference" "TP3"
 			(at 37.338 27.94 90)
 			(effects
 				(font
@@ -5678,7 +5727,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "TP6")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -5694,7 +5743,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7fcca06a-7494-425f-8ff2-e3ae7e84de24")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR069"
 			(at 217.17 78.74 0)
 			(effects
 				(font
@@ -5744,7 +5793,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR056")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -5842,7 +5891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89a46ef2-0105-43b8-b12c-9b8f3dbdb7ad")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR068"
 			(at 140.97 78.74 0)
 			(effects
 				(font
@@ -5892,7 +5941,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR055")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -5995,7 +6044,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "992828fc-7ecd-4511-99e7-f893e7eccd52")
-		(property "Reference" "C34"
+		(property "Reference" "C45"
 			(at 134.62 91.186 90)
 			(effects
 				(font
@@ -6047,7 +6096,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C34")
+					(reference "C45")
 					(unit 1)
 				)
 			)
@@ -6063,7 +6112,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ecfa347-ade6-490d-a967-506e88e7303f")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR078"
 			(at 157.48 161.29 0)
 			(effects
 				(font
@@ -6113,7 +6162,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR065")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -6227,7 +6276,7 @@
 				)
 			)
 		)
-		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+		(property "Footprint" "footprints:NetTie-2_SMD_Pad0.2mm"
 			(at 86.36 86.36 0)
 			(effects
 				(font
@@ -6270,7 +6319,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 165.1 124.46 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6279,7 +6328,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6c9121d-6ebb-4b4c-a42b-ddac018430d9")
-		(property "Reference" "R26"
+		(property "Reference" "R41"
 			(at 165.1 118.11 90)
 			(effects
 				(font
@@ -6296,7 +6345,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 165.1 126.238 90)
+			(at 165.354 123.444 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6313,7 +6362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Resistor, US symbol"
 			(at 165.1 124.46 0)
 			(effects
 				(font
@@ -6331,7 +6380,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "R26")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -6346,7 +6395,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a963cbac-1ea0-48ea-9ce9-eb01eae74978")
-		(property "Reference" "C39"
+		(property "Reference" "C50"
 			(at 64.77 145.034 0)
 			(effects
 				(font
@@ -6400,7 +6449,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C39")
+					(reference "C50")
 					(unit 1)
 				)
 			)
@@ -6583,7 +6632,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b167f911-5dbe-4df8-93d8-3ca8a4364fff")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR067"
 			(at 63.5 78.74 0)
 			(effects
 				(font
@@ -6633,14 +6682,14 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR054")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 204.47 54.61 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6649,7 +6698,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7f3893d-5ba9-4a57-9c61-89e87da69194")
-		(property "Reference" "R24"
+		(property "Reference" "R36"
 			(at 204.47 48.26 90)
 			(effects
 				(font
@@ -6666,7 +6715,7 @@
 			)
 		)
 		(property "Footprint" "footprints:RESC10052X105N"
-			(at 204.47 52.832 90)
+			(at 204.216 55.626 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6683,7 +6732,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Resistor, US symbol"
 			(at 204.47 54.61 0)
 			(effects
 				(font
@@ -6701,7 +6750,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "R24")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -6717,7 +6766,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "baa8edb4-94ac-4cf1-bcf1-752cb65a07a3")
-		(property "Reference" "C38"
+		(property "Reference" "C49"
 			(at 237.49 133.3499 0)
 			(effects
 				(font
@@ -6771,7 +6820,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C38")
+					(reference "C49")
 					(unit 1)
 				)
 			)
@@ -6787,7 +6836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfe567bb-0e7b-413b-bf90-745312b946ba")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR079"
 			(at 233.68 161.29 0)
 			(effects
 				(font
@@ -6837,7 +6886,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR066")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -6852,7 +6901,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c16ac853-7146-42f5-8f50-63c5b408b5a6")
-		(property "Reference" "C31"
+		(property "Reference" "C42"
 			(at 247.142 61.214 90)
 			(effects
 				(font
@@ -6906,7 +6955,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C31")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -6938,7 +6987,7 @@
 				)
 			)
 		)
-		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+		(property "Footprint" "footprints:NetTie-2_SMD_Pad0.2mm"
 			(at 163.83 86.36 0)
 			(effects
 				(font
@@ -6990,7 +7039,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cfa496fa-c101-4132-823b-6e98fca7b327")
-		(property "Reference" "C37"
+		(property "Reference" "C48"
 			(at 161.29 133.3499 0)
 			(effects
 				(font
@@ -7044,7 +7093,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C37")
+					(reference "C48")
 					(unit 1)
 				)
 			)
@@ -7059,7 +7108,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cfe7ac9f-d9ee-4723-ab6e-46ad07d7e20a")
-		(property "Reference" "C30"
+		(property "Reference" "C41"
 			(at 176.022 61.214 90)
 			(effects
 				(font
@@ -7113,7 +7162,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C30")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -7129,7 +7178,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d03d21bc-70f4-4e99-9ffb-dba2111e9b1a")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR077"
 			(at 80.01 161.29 0)
 			(effects
 				(font
@@ -7179,7 +7228,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR064")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -7195,7 +7244,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0b5723a-3c3d-41aa-8a27-f231489603bb")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR076"
 			(at 189.23 149.86 0)
 			(effects
 				(font
@@ -7245,7 +7294,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR063")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -7260,7 +7309,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d5909a20-7e9e-4e68-99b3-f3043508d793")
-		(property "Reference" "C27"
+		(property "Reference" "C38"
 			(at 93.472 61.214 90)
 			(effects
 				(font
@@ -7314,7 +7363,7 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C27")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -7330,7 +7379,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d73ff872-6c9e-427f-84ca-391acc05a7dd")
-		(property "Reference" "TP8"
+		(property "Reference" "TP5"
 			(at 114.808 49.53 90)
 			(effects
 				(font
@@ -7379,7 +7428,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "TP8")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -7395,7 +7444,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd5e05f9-8e9b-4ed4-9063-526487e30ece")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR074"
 			(at 35.56 149.86 0)
 			(effects
 				(font
@@ -7445,7 +7494,7 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR061")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -7461,7 +7510,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de22cb44-88d0-4002-acb4-022c63f8a8a7")
-		(property "Reference" "TP9"
+		(property "Reference" "TP6"
 			(at 191.008 49.53 90)
 			(effects
 				(font
@@ -7510,7 +7559,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "TP9")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -7526,7 +7575,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de7cecae-0a14-4f1d-b79d-03326e937fe3")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR073"
 			(at 189.23 139.7 0)
 			(effects
 				(font
@@ -7576,7 +7625,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "#PWR060")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -7665,7 +7714,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 50.8 54.61 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7674,7 +7723,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1fac972-7d08-478c-8256-804319639f5e")
-		(property "Reference" "R22"
+		(property "Reference" "R34"
 			(at 50.8 48.26 90)
 			(effects
 				(font
@@ -7691,7 +7740,7 @@
 			)
 		)
 		(property "Footprint" "footprints:RESC10052X105N"
-			(at 50.8 52.832 90)
+			(at 50.546 55.626 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7708,7 +7757,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Resistor, US symbol"
 			(at 50.8 54.61 0)
 			(effects
 				(font
@@ -7726,7 +7775,7 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "R22")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -7741,7 +7790,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fc40d310-ba91-4e84-a48f-e9296bb8af19")
-		(property "Reference" "C33"
+		(property "Reference" "C44"
 			(at 57.15 91.186 90)
 			(effects
 				(font
@@ -7793,7 +7842,7 @@
 		(instances
 			(project ""
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C33")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -7808,7 +7857,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fc49c23e-2746-4af1-aa72-59264bac4967")
-		(property "Reference" "C40"
+		(property "Reference" "C51"
 			(at 142.24 145.034 0)
 			(effects
 				(font
@@ -7862,7 +7911,7 @@
 		(instances
 			(project "resc"
 				(path "/83aea3b7-5b9b-498e-8d41-e84fae2f87fa/3266dde5-9639-41bf-a4f8-bbd2d0c164ac"
-					(reference "C40")
+					(reference "C51")
 					(unit 1)
 				)
 			)
